@@ -6,6 +6,8 @@
 
         <title>Laravel</title>
 
+        <script src="/js/app.js"></script>
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
@@ -78,7 +80,9 @@
                     @endauth
                 </div>
             @endif
-
+            <div style="width:100%;height:300px;overflow:hidden;background-color:gray">
+                <example-component></example-component>
+            </div>
             <div class="content">
                 <div class="title m-b-md">
                     Laravel

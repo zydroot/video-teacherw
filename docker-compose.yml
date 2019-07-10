@@ -13,6 +13,11 @@ services:
     volumes:
       - ./app:/app
     tty: true
+  node:
+    image: node
+    volumes:
+      - ./app:/var/www/html
+    tty: true
   db:
     image: mysql:5.7
     ports:
