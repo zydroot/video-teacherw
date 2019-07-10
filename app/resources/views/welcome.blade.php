@@ -6,7 +6,6 @@
 
         <title>Laravel</title>
 
-        <script src="/js/app.js"></script>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -80,7 +79,7 @@
                     @endauth
                 </div>
             @endif
-            <div style="width:100%;height:300px;overflow:hidden;background-color:gray">
+            <div id="app2">
                 <example-component></example-component>
             </div>
             <div class="content">
@@ -100,4 +99,11 @@
             </div>
         </div>
     </body>
+
+    <script src="/js/app.js"></script>
+<script>
+    const app2 = new Vue({
+        el: '#app2'
+    });
+</script>
 </html>
