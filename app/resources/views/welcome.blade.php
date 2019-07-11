@@ -4,97 +4,166 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
-
-
+        <title>速示</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="/css/app.css">
 
         <!-- Styles -->
         <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+        <div class="flex-center position-ref full-height" id="app2">
+            <header>
+                <div class="logo"></div>
+                <div></div>
+            </header>
+            <div class="block video">
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-            <div id="app2">
-                <example-component></example-component>
             </div>
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+            <div class="block content">
+                <div  class="support">
+                    <h5>
+                        支持以下网站视频
+                    </h5>
+                    <span class="support-more">使用方法：进入各大视频网站，找到想要观看的VIP视频，然后复制链接（浏览器上的视频地址），粘贴到视频的输入框，并点击“解析播放”即可</span>
                 </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-4">
+                            <div class="logo-lie">
+                                <a href="http://vip.iqiyi.com/" target="_blank" title="爱奇艺会员">
+                                    <img class="img-responsive" src="img/iqiyilogo.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <div class="logo-lie">
+                                <a href="http://film.qq.com/" target="_blank" title="腾讯会员中心">
+                                    <img class="img-responsive" src="img/qqlogo.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <div class="logo-lie">
+                                <a href="http://vip.youku.com/" target="_blank" title="优酷会员中心">
+                                    <img class="img-responsive" src="img/youkulogo.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <div class="logo-lie">
+                                <a href="http://www.mgtv.com/vip/" target="_blank" title="芒果会员中心">
+                                    <img class="img-responsive" src="img/hunantvlogo.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <div class="logo-lie">
+                                <a href="http://yuanxian.le.com/" target="_blank" title="乐视会员中心">
+                                    <img class="img-responsive" src="img/letvlogo.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <div class="logo-lie">
+                                <a href="http://vip.tudou.com" target="_blank" title="土豆会员中心">
+                                    <img class="img-responsive" src="img/tudoulogo.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="logo-lie">
+                                <a href="http://www.baofeng.com/" target="_blank" title="暴风会员">
+                                    <img class="img-responsive" src="img/baofeng.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-2 ">
+                            <div class="logo-lie">
+                                <a href="http://vip.1905.com/" target="_blank" title="1905电影网视频">
+                                    <img class="img-responsive" src="img/1905logo.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-2 ">
+                            <div class="logo-lie">
+                                <a href="http://vip.kankan.com/" target="_blank" title="天天看看">
+                                    <img class="img-responsive" src="img/kankan.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-2 ">
+                            <div class="logo-lie">
+                                <a href="http://www.pptv.com/" target="_blank" title="PPTV聚力">
+                                    <img class="img-responsive" src="img/pptv.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="logo-lie">
+                                <a href="http://www.yinyuetai.com/" target="_blank" title="音悦台MV">
+                                    <img class="img-responsive" src="img/yinyuetailogo.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="logo-lie">
+                                <a href="http://www.56.com/" target="_blank" title="56视频">
+                                    <img class="img-responsive" src="img/56logo.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="logo-lie">
+                                <a href="http://www.fun.vip" target="_blank" title="风行视频">
+                                    <img class="img-responsive" src="img/fengxing.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-2 ">
+                            <div class="logo-lie">
+                                <a href="http://movie.ku6.com/" target="_blank" title="酷6视频">
+                                    <img class="img-responsive" src="img/ku6logo.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-2 ">
+                            <div class="logo-lie">
+                                <a href="http://vip.wasu.cn/" target="_blank" title="WASU华数视频">
+                                    <img class="img-responsive" src="img/wasulogo.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-2 ">
+                            <div class="logo-lie">
+                                <a href="http://video.sina.com.cn/" target="_blank" title="新浪视频">
+                                    <img class="img-responsive" src="img/sinalogo.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="logo-lie">
+                                <a href="https://film.sohu.com/" target="_blank" title="搜狐视频">
+                                    <img class="img-responsive" src="img/sohulogo.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="logo-lie">
+                                <a href="http://www.baomihua.com/" target="_blank" title="爆米花">
+                                    <img class="img-responsive" src="img/baomihualogo.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
